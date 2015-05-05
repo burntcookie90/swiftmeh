@@ -1,18 +1,16 @@
-//
-//  ViewController.swift
-//  swiftmeh
-//
-//  Created by vishnu on 5/5/15.
-//  Copyright (c) 2015 vishnu. All rights reserved.
-//
-
 import UIKit
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, MainView {
+    var presenter : MainPresenter!
 
+    @IBOutlet weak var titleLabel : UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        
+        presenter = MainPresenterImpl<MainView>(view: self)
+        presenter.retrieveCurrentMeh()
     }
 
     override func didReceiveMemoryWarning() {
@@ -20,6 +18,9 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
+    func populatePage(currentMeh: Meh) {
+        titleLabel.text = currentMeh.deal?.title
+    }
 
 }
 

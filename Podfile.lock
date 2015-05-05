@@ -1,0 +1,32 @@
+PODS:
+  - Alamofire (1.2.1)
+  - AlamofireObjectMapper (0.1):
+    - Alamofire (~> 1.2)
+    - ObjectMapper (~> 0.10)
+  - LlamaKit (0.6.0)
+  - ObjectMapper (0.11)
+  - ReactiveCocoa (3.0-alpha.3):
+    - LlamaKit (~> 0.6.0)
+    - ReactiveCocoa/UI (= 3.0-alpha.3)
+  - ReactiveCocoa/Core (3.0-alpha.3):
+    - LlamaKit (~> 0.6.0)
+    - ReactiveCocoa/no-arc
+  - ReactiveCocoa/no-arc (3.0-alpha.3):
+    - LlamaKit (~> 0.6.0)
+  - ReactiveCocoa/UI (3.0-alpha.3):
+    - LlamaKit (~> 0.6.0)
+    - ReactiveCocoa/Core
+
+DEPENDENCIES:
+  - Alamofire (~> 1.2)
+  - AlamofireObjectMapper (~> 0.1)
+  - ReactiveCocoa (= 3.0-alpha.3)
+
+SPEC CHECKSUMS:
+  Alamofire: 1acfdf179aff68b41a48dff70c1ac7fa263e2bcb
+  AlamofireObjectMapper: 7cb6736ff08e5e13719053e22ac036adacd1b7c2
+  LlamaKit: dbb01a9e77a78c9f4c1a1c9fef6f2bcf04c38c42
+  ObjectMapper: fc34b29bb04086ed831174a01c8310b507a6ba25
+  ReactiveCocoa: eb49bad623ce7c8a4c54d1c4049b5e68cd006a61
+
+COCOAPODS: 0.37.0
